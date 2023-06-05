@@ -1,13 +1,9 @@
-total=1
-num1=1
-num2=0
-fnum=0
-
-while fnum<4000000:
-    num1=num2
-    num2=total
-    total=num1+num2
-
-    if total%2==0:
-        fnum+=total
-print(fnum)
+prime_factor=600851475143
+i=2
+while prime_factor!=1:
+    rem=prime_factor%i
+    if rem==0:
+        prime_factor//=i
+        print(i)
+    else:
+        i+=1
